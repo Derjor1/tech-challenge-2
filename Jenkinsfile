@@ -8,6 +8,7 @@ pipeline {
         IMAGE_TAG    = "${BUILD_NUMBER}"
         IMAGE_URI    = "${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
         KUBE_CONTEXT = 'arn:aws:eks:us-east-1:883627150323:cluster/tech-challenge-cluster'
+        AWS_PAGER = ""
     }
 
     stages {
