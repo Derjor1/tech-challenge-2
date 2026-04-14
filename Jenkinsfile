@@ -65,7 +65,6 @@ pipeline {
         stage('Deploy to EKS with Helm') {
             steps {
                 sh '''
-                    kubectl config use-context ${KUBE_CONTEXT}
 
                     helm upgrade --install tech-challenge-app ./helm/tech-challenge-app \
                       --set image.repository=${IMAGE_URI} \
