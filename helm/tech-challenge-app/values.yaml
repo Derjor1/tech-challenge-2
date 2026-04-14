@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: 883627150323.dkr.ecr.us-east-1.amazonaws.com/tech-challenge-app
   pullPolicy: Always
-  tag: "latest"
+  tag: "877b7d8"
 
 service:
   type: ClusterIP
