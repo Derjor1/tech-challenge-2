@@ -355,3 +355,10 @@ The system is fully functional and capable of deploying updates automatically th
 
 ---
 
+## Bonus: GitOps Implementation (GitHub Actions + Argo CD)
+
+This project includes a fully working GitOps-based deployment model implemented on the `gitops` branch.
+
+### Overview
+
+In this model, Git becomes the single source of truth for the system state. Instead of deploying directly from a CI tool (like Jenkins), all changes flow through Git, and Argo CD ensures the Kubernetes cluster matches what is defined in the repository.
